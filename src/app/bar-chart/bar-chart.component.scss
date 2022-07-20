@@ -1,0 +1,26 @@
+:host {
+  width: 268px;
+
+.bar-chart-container {
+  background: #990D81;
+  border-radius: 12px;
+}
+  .demo-chart {
+    padding: 10px;
+    height: 300px;
+  }
+  .details {
+    * {
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .desc {
+      font-size: 14px;
+    }
+  }
+}
