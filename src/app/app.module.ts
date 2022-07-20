@@ -30,9 +30,9 @@ import {NgxEchartsModule} from "ngx-echarts";
   ],
   imports: [
     BrowserModule,
-    // NgxEchartsModule.forRoot({
-    //   echarts: () => import('echarts'),
-    // }),
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts'),
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
