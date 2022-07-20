@@ -1,43 +1,45 @@
 <div class="card request-card d-flex col-md-9 my-3">
     <div class="card-body">
       <div class="card-title title">Recent Requests</div>
-      <Table class="mt-3 w-100 text-nowrap table-responsive">
-        <thead class="py-2">
-        <tr>
-          <th>Name/Email</th>
-          <th>Type</th>
-          <th>Status</th>
-          <th>Date</th>
-          <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let request of data" class="align-middle">
-          <td>
-            <div class="d-flex align-items-center">
-              <div>
-                <img src="{{request.icon}}" alt=""/>
-              </div>
-              <div class="mx-4">
-                <h4 class="request-name mb-0">{{request.name}}</h4>
-                <p class="request-email mb-0">{{request.email}}</p>
+      <div class="table-responsive">
+        <table class="mt-3 w-100 text-nowrap">
+          <thead class="py-2">
+          <tr>
+            <th>Name/Email</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let request of data" class="align-middle">
+            <td>
+              <div class="d-flex align-items-center">
+                <div>
+                  <img src="{{request.icon}}" alt=""/>
+                </div>
+                <div class="mx-4">
+                  <h4 class="request-name mb-0">{{request.name}}</h4>
+                  <p class="request-email mb-0">{{request.email}}</p>
 
+                </div>
               </div>
-            </div>
-          </td>
-          <td>{{request.type}}</td>
-          <td class="status">
-            <div class="badge badge-pill {{request.status}}">{{request.status}}</div>
-          </td>
-          <td>{{request.date}}</td>
-          <td>
-            <div>
-              <img src="./assets/icons/arrowRightCircle.svg" alt=""/>
-            </div>
-          </td>
-        </tr>
-        </tbody>
-      </Table>
+            </td>
+            <td>{{request.type}}</td>
+            <td class="status">
+              <div class="badge badge-pill {{request.status}}">{{request.status}}</div>
+            </td>
+            <td>{{request.date}}</td>
+            <td>
+              <div>
+                <img src="./assets/icons/arrowRightCircle.svg" alt=""/>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
