@@ -1,0 +1,14 @@
+<div class="link-container">
+  <div *ngFor="let link of links"
+    class="link d-flex align-items-center text-nowrap px-3 my-3 cursor" [ngClass]="{'focus' : link.focus, 'justify-content-between': link.hasDropdown}">
+                    <div class="d-flex align-items-center">
+                        <div class="icon p-0 m-0">
+                                <img [src]="link.icon" alt=""/>
+                        </div>
+                        <p class="linkText p-0 mb-0">{{link.text}}</p>
+                    </div>
+  <div *ngIf="link.hasDropdown" class="dropdownIcon">
+    <img src="assets/icons/ArrowDownCircle.png" alt=""/>
+  </div>
+  </div>
+</div>

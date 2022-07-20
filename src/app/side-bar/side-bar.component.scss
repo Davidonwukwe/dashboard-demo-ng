@@ -1,0 +1,66 @@
+:host {
+  width: 17.6%;
+  min-width: 200px;
+  max-width: 253px;
+  background-color: #990D81;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  @media screen and (max-width: 500px) {
+    & {
+      min-width: 75px;
+    }
+  }
+}
+
+.side-bar {
+  .logo {
+    width: 65px;
+    height: 51px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .profile-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    bottom: 50px;
+    width: 85%;
+
+    .details {
+      margin-left: 8px;
+    }
+
+    .name {
+      font-size: 14px;
+      color: white;
+    }
+
+    .role {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  hr.endLine {
+    color: white;
+    opacity: 0.1;
+  }
+
+  @media screen and (max-width: 500px) {
+    .logo {
+      width: 32px;
+      height: 25px;
+    }
+    .profile-card {
+      display: none !important;
+    }
+  }
+}
+
+* {
+  color: white;
+}

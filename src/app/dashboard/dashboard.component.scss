@@ -1,0 +1,33 @@
+.dashboard-container {
+  width: 100%;
+
+  .chartImage {
+    width: 850px;
+  }
+
+  .barChartImage {
+    width: 268px;
+  }
+
+  .chartImage, .barchartImage {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .content {
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: 1872px) {
+    .charts {
+      width: 75%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .content {
+      margin-top: 120px;
+    }
+  }
+}
